@@ -1,0 +1,69 @@
+.color{
+    color: white;
+}
+.contact-img{
+    width: 110px;
+
+    border-radius: 50%;
+}
+
+.icon{
+    width: 35px;
+    height: 30px;
+}
+
+.largura{
+    width: 150%;
+}
+
+
+
+.icon-text{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    vertical-align:middle;
+    
+}
+
+.botoesicones{
+    font-size: 10px !important;
+    
+}
+
+.azul{
+    color: #0d6efd !important;
+}
+
+.vermelho{
+    color: #dc3545 !important;
+}
+
+.amarelo{
+    color: #ffc107 !important; ;
+}
+
+.ball{
+    color:lime;
+    font-size: 10px;
+    
+    
+}
+.balll{
+    color:gold
+    
+}
+.ballll{
+    color:red
+    
+}
+
+.card{
+    color: black;
+    border:0ch; 
+}
+
+.rodape{
+    color: dimgrey;
+    font-size: 10px;
+}

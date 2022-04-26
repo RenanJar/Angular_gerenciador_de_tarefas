@@ -1,0 +1,43 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col color">
+            <p class="h3 fw-bold"> Edit Task</p>
+            <p class="fst-italic">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam voluptatum exercitationem, velit maxime error eum totam, repellendus quo cumque dolorum consequuntur quaerat. Et, accusamus saepe. Aliquam quos ad nihil commodi.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+
+            <pre class="color">{{tarefaid}}</pre>
+            
+            <form (submit)="submitUpdate()">
+                <div class="mb-2">
+                <input [(ngModel)]="tarefa.titulotarefa" required="true" [value]="tarefa.titulotarefa" name="titulotarefa" class="form-control" placeholder="Titulo" type="text">
+                </div>
+                <div class="mb-2">
+                <input [(ngModel)]="tarefa.descricaotarefa" required="true" [value]="tarefa.descricaotarefa" type ="text" name="descricaotarefa" placeholder="descricaotarefa" class="form-control" id="exampleFormControlTextarea1" rows="7">
+                </div>
+                <div class="color">Prazo para conlcusao:</div>
+                <div class="mb-2">
+                    <input [(ngModel)]="tarefa.prazoconclusao" required="true" [value]="tarefa.prazoconclusao"name="prazoconclusao" class="form-control" placeholder="AAAA-MM-DD" type="text">
+                </div>
+                <div class="mb-2">
+                    <select name="status" required="true" [value]="tarefa.status"  *ngIf="status.length > 0" class="form-control">
+                        <option value="">Selecione um status</option>
+                        <option *ngFor="let statuss of status" [value]="statuss.id">{{statuss.etiqueta}} </option>
+                    </select>
+                </div>
+                <div class="mb-2">
+                    <input class="btn btn-danger" value="Update" type="submit" >
+                    <a class="btn btn-light ms-2" routerLink="/Home">Fechar</a>
+                </div>
+                
+            </form>
+
+
+        </div>
+        
+    </div>
+</div>
