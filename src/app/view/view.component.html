@@ -1,0 +1,72 @@
+<div class="container color mt-3">
+    <div class="row">
+        <div class="col">
+            <p class="h3 fw-bold"> Tasks
+                <a class="btn btn-danger btn-sm" routerLink="/newtarefa">new</a>
+            </p>
+            <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio perspiciatis
+                veniam unde cupiditate, officiis nulla est nemo voluptate explicabo laboriosam harum fugit voluptates
+                reiciendis obcaecati vero rerum deleniti non accusamus!
+            </p>
+            
+
+        </div>
+    </div>
+</div>
+<div class="container mt-3 ">
+    <div class="row">
+            
+        <!-- primeria coluna-->
+        <div  cdkDropList class="col-3 bckg mx-1 color Em-Andamento"
+        (cdkDropListDropped)="drop($event)"> 
+        
+            <div class="d-flex justify-content-center mt-2">
+                <p class="m-0">Em andamento</p>
+                <div>
+                    <i class="bi bi-hourglass-split px-2"></i>
+                </div>
+            </div>
+        
+            <div class="card mt-2 card bckgcard shadow Tarefa "*ngFor="let teste of teste" cdkDrag>
+
+                <div class="card-body d-flex flex-row justify-content-between p-2 " >
+                    <div>
+                        {{teste.titulo}}
+                    </div>
+                    <div >
+                        <i class="bi bi-three-dots-vertical px-2"></i>
+                    </div>
+                </div>
+
+                <div class="p-2">
+                    <span class="badge bg-success">Concluido</span>
+                </div>
+                
+            </div>
+                
+        </div>
+
+        <!-- segunda coluna-->
+        <div class="col-3 bckg mx-1 color Concluido" >
+            <div class="d-flex justify-content-center mt-2">
+                <p class="m-0">Concluido</p>
+                <i class="bi bi-card-checklist px-2"></i>
+            </div>
+            <div>
+                    
+               
+            </div>
+        </div>
+
+        <!-- terceira coluna-->
+        <div class="col-3 bckg mx-1 color Em-Atraso">
+            <div class="d-flex justify-content-center mt-2">
+                <p class="m-0">Em atraso</p>
+                <i class="bi bi-stopwatch px-2"></i>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>

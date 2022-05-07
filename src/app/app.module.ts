@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { NewtarefaComponent } from './newtarefa/newtarefa.component';
 import { EdittarefaComponent } from './edittarefa/edittarefa.component';
 import { DeleteComponent } from './delete/delete.component';
+import { ViewComponent } from './view/view.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 
 @NgModule({
@@ -23,13 +25,15 @@ import { DeleteComponent } from './delete/delete.component';
     CadastroComponent,
     NewtarefaComponent,
     EdittarefaComponent,
-    DeleteComponent
+    DeleteComponent,
+    ViewComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    DragDropModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

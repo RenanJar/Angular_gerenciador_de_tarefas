@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  public clickDeleteContact(tarefaId: number | undefined){
+  public clickDeleteTarefa(tarefaId: number | undefined){
     if(tarefaId){
       this.tarefaService.deleteTarefa(tarefaId).subscribe((data:{})=>{
         this.getAllTarefasFromServer();

@@ -14,6 +14,7 @@
 
 .largura{
     width: 150%;
+    
 }
 
 
@@ -27,12 +28,12 @@
 }
 
 .botoesicones{
-    font-size: 10px !important;
+    font-size: 12px !important;
     
 }
 
 .azul{
-    color: #0d6efd !important;
+    color: #000000 !important;
 }
 
 .vermelho{
@@ -50,11 +51,13 @@
     
 }
 .balll{
-    color:gold
+    color:gold;
+    font-size: 10px;
     
 }
 .ballll{
-    color:red
+    color:red;
+    font-size: 10px;
     
 }
 
